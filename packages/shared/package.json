@@ -1,0 +1,13 @@
+{
+  "name": "@smdn-design-system/shared",
+  "version": "0.1.0",
+  "description": "Shared code & utils",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "repository": "https://github.com/samsoedien/smdn-design-system/tree/master/packages/shared",
+  "author": "Samsoedien <contact@samsoedien.com> (https://samsoedien.com)",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc"
+  }
+}

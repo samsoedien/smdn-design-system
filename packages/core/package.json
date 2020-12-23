@@ -1,0 +1,15 @@
+{
+  "name": "@smdn-design-system/core",
+  "version": "0.1.0",
+  "description": "Core UI components",
+  "main": "dist/index.js",
+  "repository": "https://github.com/samsoedien/smdn-design-system/tree/master/packages/core",
+  "author": "Samsoedien <contact@samsoedien.com> (https://samsoedien.com)",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc" 
+  },
+  "dependencies": {
+    "@smdn-design-system/shared": "0.1.0"
+  }
+}
