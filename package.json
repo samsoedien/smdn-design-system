@@ -17,10 +17,17 @@
     "lint:styles": "stylelint ./packages/**/*.{css,scss,tsx}",
     "test": "jest",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "clean": "rimraf packages/**/dist packages/**/lib packages/**/*.tsbuildinfo "
   },
   "devDependencies": {
+    "@babel/cli": "^7.12.10",
     "@babel/core": "^7.12.10",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/plugin-proposal-object-rest-spread": "^7.12.1",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
+    "@babel/preset-typescript": "^7.12.7",
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
     "@storybook/addon-actions": "^6.1.11",
@@ -34,6 +41,7 @@
     "@typescript-eslint/parser": "^4.11.0",
     "babel-loader": "^8.2.2",
     "commitlint": "^11.0.0",
+    "cross-env": "^7.0.3",
     "eslint": "^7.16.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-prettier": "^7.1.0",

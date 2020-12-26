@@ -8,6 +8,8 @@
   "author": "Samsoedien <contact@samsoedien.com> (https://samsoedien.com)",
   "license": "MIT",
   "scripts": {
-    "build": "tsc"
+    "build": "yarn build:scripts && yarn build:types",
+    "build:scripts": "cross-env BABEL_ENV=production babel --root-mode upward --extensions .ts,.tsx ./src --out-dir ./lib --source-maps inline --ignore **/*.test.tsx,**/*.stories.tsx",
+    "build:types": "tsc --emitDeclarationOnly"
   }
 }
