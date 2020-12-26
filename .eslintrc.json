@@ -3,7 +3,9 @@
   "env": {
     "browser": true,
     "es2021": true,
-    "node": true
+    "es6": true,
+    "node": true,
+    "jest": true
   },
   "extends": [
     "plugin:react/recommended",
@@ -22,10 +24,38 @@
   "plugins": [
     "react",
     "@typescript-eslint",
-    "prettier"
+    "prettier",
+    "jest"
   ],
   "rules": {
-      "import/no-unresolved": "warn"
+    "@typescript-eslint/no-unused-vars": "warn",
+    "no-unused-vars": "off",
+    "prettier/prettier": "error",
+    "import/prefer-default-export": "warn",
+    "import/no-unresolved": "warn",
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": ["**/*.test.ts", "**/*.test.tsx"] }],
+    "import/no-cycle": "warn",
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+    ],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".tsx"] }],
+    "react/jsx-props-no-spreading": "off",
+    "react/no-array-index-key": "warn",
+    "jest/no-disabled-tests": "warn",
+    "jest/no-focused-tests": "error",
+    "jest/no-identical-title": "error",
+    "jest/prefer-to-have-length": "warn",
+    "jest/valid-expect": "error",
+    "react/forbid-prop-types": "warn",
+    "@typescript-eslint/no-use-before-define": "warn",
+    "no-use-before-define": "off"
   },
   "settings": {
     "import/resolver": {
