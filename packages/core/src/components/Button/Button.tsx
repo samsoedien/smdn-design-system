@@ -19,6 +19,7 @@ const StyledButton = styled.button<IButtonProps>`
 
 export interface IButtonProps {
   appearance?: Appearance
+  onClick?: () => void
   children: React.ReactNode
 }
 
