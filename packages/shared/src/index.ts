@@ -1,3 +1,2 @@
-export default 'shared'
-
-export * from './models/types'
+export * from './utils'
+export * from './models'
