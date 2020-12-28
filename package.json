@@ -12,6 +12,7 @@
   ],
   "scripts": {
     "build": "yarn lerna run build --stream",
+    "build:tokens": "yarn lerna run build:tokens",
     "lint": "yarn lint:scripts && yarn lint:styles",
     "lint:scripts": "eslint \"./packages/**/*.{js,jsx,ts,tsx}\"",
     "lint:styles": "stylelint ./packages/**/*.{css,scss,tsx}",
