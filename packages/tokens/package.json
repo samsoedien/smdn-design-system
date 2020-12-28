@@ -1,0 +1,16 @@
+{
+  "name": "@smdn-design-system/tokens",
+  "version": "0.1.0",
+  "description": "Design tokens variables used to maintain consistent style choices througout the design system",
+  "main": "index.js",
+  "repository": "https://github.com/samsoedien/smdn-design-system/tree/master/packages/tokens",
+  "author": "Samsoedien <contact@samsoedien.com> (https://samsoedien.com)",
+  "license": "MIT",
+  "scripts": {
+    "build": "yarn build:tokens",
+    "build:tokens": "style-dictionary build --config ./style-dictionary.config.json"
+  },
+  "devDependencies": {
+    "style-dictionary": "^3.0.0-rc.1"
+  }
+}
