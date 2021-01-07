@@ -104,9 +104,8 @@
     "./packages/**/*.{css,scss}": [
       "yarn --silent lint:styles --fix"
     ],
-    "./packages/**/*.{tsx}": [
+    "./packages/**/*.{ts,tsx}": [
       "yarn --silent lint:styles"
     ]
-  },
-  "dependencies": {}
+  }
 }
