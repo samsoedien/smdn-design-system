@@ -1,8 +1,15 @@
 {
-  "packages": [
-    "packages/*"
-  ],
-  "version": "0.0.0",
+  "packages": ["packages/*"],
+  "version": "0.1.0",
   "npmClient": "yarn",
-  "useWorkspaces": true
+  "useWorkspaces": true,
+  "command": {
+    "publish": {
+      "registry": "https://registry.npmjs.org",
+      "message": "chore(release): publish %s [ci skip]",
+      "conventionalCommits": true,
+      "allowBranch": ["master", "next", "feature/*"],
+      "ignoreChanges": ["*.md", "*.story.tsx", "*.story.mdx", "*.test.ts", "*.test.tsx", "*.snap", "*.d.ts"]
+    }
+  }
 }
