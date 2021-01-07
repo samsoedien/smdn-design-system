@@ -1,74 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import styled, { css } from 'styled-components'
 
-const StyledButton = styled.button<IButtonProps>`
-  /* height: ${(props) => props.size}; */
-  color: #121212;
-  min-width: 32px;
-  padding: 0 6px;
-  border: none;
-  border-radius: 3px;
-  line-height: 32px;
-  transition: 0.2s;
-  user-select: none;
-  cursor: pointer;
-
-  ${(props) =>
-    props.isLoading &&
-    css`
-      cursor: progress;
-    `};
-  ${(props) =>
-    props.appearance === 'primary' &&
-    css`
-      background-color: lightblue;
-      color: white;
-      &:hover,
-      &:focus {
-        background-color: blue;
-        transition: 0.2s;
-      }
-      &[disabled] {
-        background-color: lightgrey;
-      }
-    `};
-  ${(props) =>
-    props.appearance === 'secondary' &&
-    css`
-      background-color: #efefef;
-      &:hover,
-      &:focus {
-        background-color: #efefef;
-        transition: 0.2s;
-      }
-    `};
-  ${(props) =>
-    props.appearance === 'tertiary' &&
-    css`
-      background-color: transparent;
-      &:hover,
-      &:focus {
-        background-color: #efefef;
-        transition: 0.2s;
-      }
-    `};
-  ${(props) =>
-    props.size === 'regular' &&
-    css`
-      height: 36px;
-    `};
-  ${(props) =>
-    props.size === 'small' &&
-    css`
-      height: 30px;
-    `};
-  ${(props) =>
-    props.size === 'large' &&
-    css`
-      height: 48px;
-    `};
-`
+import { StyledButton } from './Button.styles'
 
 export type Appearance = 'primary' | 'secondary' | 'tertiary'
 export type Size = 'regular' | 'small' | 'large'
