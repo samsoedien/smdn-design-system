@@ -2,6 +2,13 @@
 
 exports[`Button snapshot works 1`] = `
 <button
-  className=""
-/>
+  className="smdn-b-button"
+  data-test="button-component"
+  disabled={false}
+  onClick={[Function]}
+  size="regular"
+  type="submit"
+>
+  Button
+</button>
 `;
