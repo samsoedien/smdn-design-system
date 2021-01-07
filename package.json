@@ -11,7 +11,10 @@
     "packages/*"
   ],
   "scripts": {
+    "start": "yarn clean && yarn bootstrap && yarn build && yarn storybook",
+    "bootstrap": "yarn lerna bootstrap",
     "build": "yarn lerna run build --stream",
+    "compile": "tsc --project ./tsconfig.base.json --noEmit --watch",
     "lint": "yarn lint:scripts && yarn lint:styles",
     "lint:scripts": "eslint \"./packages/**/*.{js,jsx,ts,tsx}\"",
     "lint:styles": "stylelint ./packages/**/*.{css,scss,tsx}",
@@ -19,7 +22,7 @@
     "test:coverage": "yarn test --coverage",
     "test:generate-output": "jest --json --outputFile=.jest-test-results.json",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
+    "storybook:build": "build-storybook",
     "clean": "rimraf packages/**/dist packages/**/lib packages/**/*.tsbuildinfo "
   },
   "devDependencies": {
