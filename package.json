@@ -18,7 +18,7 @@
     "compile": "tsc --project ./tsconfig.base.json --noEmit --watch",
     "lint": "yarn lint:scripts && yarn lint:styles",
     "lint:scripts": "eslint \"./packages/**/*.{js,jsx,ts,tsx}\"",
-    "lint:styles": "stylelint ./packages/**/*.{css,scss,tsx}",
+    "lint:styles": "stylelint ./packages/**/*.{css,scss,ts,tsx}",
     "test": "jest --watch",
     "test:coverage": "yarn test --coverage",
     "test:generate-output": "jest --json --outputFile=.jest-test-results.json",
@@ -105,7 +105,7 @@
     "./packages/**/*.{css,scss}": [
       "yarn --silent lint:styles --fix"
     ],
-    "./packages/**/*.{tsx}": [
+    "./packages/**/*.{ts, tsx}": [
       "yarn --silent lint:styles"
     ]
   },
