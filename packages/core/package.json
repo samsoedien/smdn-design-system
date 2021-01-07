@@ -7,9 +7,21 @@
   "author": "Samsoedien <contact@samsoedien.com> (https://samsoedien.com)",
   "license": "MIT",
   "scripts": {
-    "build": "tsc" 
+    "build": "yarn build:scripts && yarn build:types",
+    "build:scripts": "cross-env BABEL_ENV=production babel --root-mode upward --extensions .ts,.tsx ./src --out-dir ./lib --source-maps inline --ignore **/*.test.tsx,**/*.stories.tsx",
+    "build:types": "tsc --emitDeclarationOnly"
   },
   "dependencies": {
-    "@smdn-design-system/shared": "0.1.0"
+    "@smdn-design-system/shared": "0.1.0",
+    "enzyme": "^3.11.0",
+    "prop-types": "^15.7.2"
+  },
+  "peerDependencies": {
+    "react": ">= 16",
+    "react-dom": ">= 16",
+    "styled-components": ">= 5"
+  },
+  "devDependencies": {
+    "jest-styled-components": "^7.0.3"
   }
 }
