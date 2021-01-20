@@ -7122,7 +7122,7 @@ eslint-plugin-jsx-a11y@^6.4.1:
     jsx-ast-utils "^3.1.0"
     language-tags "^1.0.5"
 
-eslint-plugin-prettier@^3.3.0:
+eslint-plugin-prettier@^3.3.1:
   version "3.3.1"
   resolved "https://registry.yarnpkg.com/eslint-plugin-prettier/-/eslint-plugin-prettier-3.3.1.tgz#7079cfa2497078905011e6f82e8dd8453d1371b7"
   integrity sha512-Rq3jkcFY8RYeQLgk2cCwuc0P7SEFwDravPhsJZOQ5N4YI4DSg50NyqJ/9gdZHzQlHf8MvafSesbNJCcP/FF6pQ==
@@ -14222,10 +14222,10 @@ strong-log-transformer@^2.0.0:
     minimist "^1.2.0"
     through "^2.3.4"
 
-style-dictionary@^3.0.0-rc.1:
-  version "3.0.0-rc.1"
-  resolved "https://registry.yarnpkg.com/style-dictionary/-/style-dictionary-3.0.0-rc.1.tgz#aa916355f02ee574c6799f333d8945be72c52461"
-  integrity sha512-tSFRc/dz7IgTA/YeP3hDIMPi90cFtC1dbcrak2/DCmIBllI/u1yYovyBOejgwJjv6N8ite0iUtnM6Z5NnBcqpQ==
+style-dictionary@^3.0.0-rc.2:
+  version "3.0.0-rc.2"
+  resolved "https://registry.yarnpkg.com/style-dictionary/-/style-dictionary-3.0.0-rc.2.tgz#969527068ff1b10500e3817316dc9c5c353cea0c"
+  integrity sha512-iW2zuJZGOAsMLW7GupNY9JRATdLQkoIceV875HgSeFQf4fcha3DfXYlpW3QQKf9Bt98auOYCZ5zCb3qmmAFD3A==
   dependencies:
     chalk "^4.0.0"
     commander "^5.1.0"
